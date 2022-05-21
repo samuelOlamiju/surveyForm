@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="main">
+        <div class="title">
+            <h1 class="header" id="title">
+                <b>&target;</b>Lord Emrys Media
+            </h1>
+            <p class="caption" id="description">Thanks for taking out time to fill this Survey</p>
+        </div>
+        <form action="" id="survey-form">
+            <div class="form">
+                <label for="name" class="name" id="name-label">
+                    Name
+                </label>
+                <input type="text" class="one" id="name" required>
+            </div>
+            <div class="form">
+                <label for="email" class="email" id="email-label">
+                    Email
+                </label>
+                <input type="email" class="one" id="email" required>
+            </div>
+            <div class="form">
+                <label for="number" class="age" id="number-label" required>
+                    Age
+                </label>
+                <input type="number" class="one" id="number" min="20" max="120" required>
+            </div>
+            <div class="form">
+                <p>Best Subject in High School?</p>
+                <select id="dropdown" name="subject" class="subject one" required>
+                    <option  class="special" selected disabled >Select One</option>
+                    <option value="Algebra">Algebra</option>
+                    <option value="Biology">Biology</option>
+                    <option value="literature">Literature</option>
+                    <option value="Chemistry">Chemistry</option>
+                    <option value="Physics">Physics</option>
+                </select>
+            </div>
+            <div class="form">
+                Would you like to go to Space?
+                <label for="yes" class="radio">
+                    <input type="radio" name="radio" id="sel">Yes!
+                </label>
+                <label for="No" class="radio">
+                    <input type="radio" name="radio" id="sel">No!
+                </label>
+                <label for="Not-Sure" class="radio">
+                    <input type="radio" name="radio" id="sel">Not Sure
+                </label>
+            </div>
+            <div class="form">
+                Life is sweet, ain't it?
+                <label for="agree" class="agree">
+                    <input type="checkbox" value="agree" id="sel">Agree
+                </label>
+                <label for="s-d" class="s-d">
+                    <input type="checkbox" value="s-d" id="sel">Slightly Disagree
+                </label>
+                <label for="SD" class="SD">
+                    <input type="checkbox" value="SD" id="sel">Strongly Disagree
+                </label>
+            </div>
+            <div class="form">
+                <p>What was childhood like?</p>
+                <textarea name="" id="" cols="10" rows="10" placeholder="Describe at your discretion" class="one"></textarea>
+            </div>
+            <div class="form">
+                <button type="submit" id="submit" class="one" >Submit</button>
+            </div>
+        </form>
+        <p class="footer">&copy; Samuel O., OLAMIJU</p>
+    </div>
+</body>
+</html>
